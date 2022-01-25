@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="window">
+            <div class="centered">
+                <h1>Tip Calculator</h1>
+            </div>
+            <div class="parentInput">
+                <div class="moneySign">$</div>
+                <div class="amount">
+                    <input type="number" id="input" />
+                </div>
+            </div>
+            <div class="slidercontainer">
+                Tip:
+                <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="20"
+                    class="slider"
+                    id="mySlider"
+                />
+                <div class="percentage">%</div>
+            </div>
+            <div class="parentResults">
+                <div class="resultsHeader">
+                    <h2>Results</h2>
+                </div>
+                <div class="tipAmount">
+                    <div class="tipText">Tip Amount</div>
+                    <div class="results" id="tip"></div> 
+                </div>
+                <div class="tipAmount">
+                    <div class="tipText" >Total Bill + Tip</div>
+                    <div class="results" id="total"></div> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
